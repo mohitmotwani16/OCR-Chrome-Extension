@@ -1,0 +1,49 @@
+<html>
+  <!-- modules for image thresholding/inverting and sliders -->
+  <script src="modules/Imagely.js"></script>
+  <script src="modules/Slider.js"></script>
+  <script src="screenshot.js"></script>
+  <link rel="stylesheet" type="text/css" href="screenshot.css" />
+  <body>
+    <div class="instructions">
+      <h1 id="select-instructions">
+        Draw a rectangle around the code you'd like to copy, then hit ENTER
+      </h1>
+      <h1 id="setting-instructions">
+        Adjust the image with the Settings on the right, to get the text to be
+        black text on white Background
+        <!-- <div class="setting-container">
+          <button id="btn" type="button" class="submit-image-button">
+            Analyse!
+          </button>
+        </div> -->
+      </h1>
+    </div>
+
+    <canvas id="canvas" height="200" width="200"></canvas>
+
+    <!-- <img id="target" src="white.png" height="480" /> -->
+
+    <div class="image-settings" id="image-settings">
+
+      <div class="setting-container">  
+          <div class="setting-button-choose"  id="thresholdButton">
+            Threshold
+          </div>
+      </div>
+
+      <div class="setting-container">
+          <div class="setting-button-choose"  id="invertButton">
+            Invert
+          </div>
+      </div>
+
+      <div class="setting-container">
+          <div class="submit-image-button" id="analyseButton">
+            Analyse Image
+          </div>
+      </div>
+
+</div>
+  </body>
+</html>
